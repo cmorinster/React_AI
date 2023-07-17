@@ -27,7 +27,7 @@ export default function Battle({ loggedIn, flashMessage }) {
 
     useEffect(() => {
         setLoader(true);
-        fetch(`http://3.23.92.242/api/champ`)
+        fetch(`https://api.roboartrumble.com/api/champ`)
         .then(res => res.json())
         .then(data => {
             console.log(data);
@@ -37,7 +37,7 @@ export default function Battle({ loggedIn, flashMessage }) {
         }) 
 
 
-        fetch(`http://3.23.92.242/api/characters/${characterCurrent}`)
+        fetch(`https://api.roboartrumble.com/api/characters/${characterCurrent}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data);
@@ -50,7 +50,7 @@ export default function Battle({ loggedIn, flashMessage }) {
     
 
     useEffect(()=>{
-        fetch(`http://3.23.92.242/api/battle/${champ.id}/${challenger.id}`)
+        fetch(`https://api.roboartrumble.com/api/battle/${champ.id}/${challenger.id}`)
             .then(res => res.json())
             .then(data => {
                 setstory(data);
@@ -124,7 +124,7 @@ export default function Battle({ loggedIn, flashMessage }) {
                 wins: champ.wins + 1
             })
 
-            fetch(`http://3.23.92.242/api/characters/${champ.id}`, {
+            fetch(`https://api.roboartrumble.com/api/characters/${champ.id}`, {
                 method: 'PUT',
                 headers: myHeaders,
                 body: formData
@@ -138,7 +138,7 @@ export default function Battle({ loggedIn, flashMessage }) {
                 champion: true
             })
 
-            fetch(`http://3.23.92.242/api/characters/${challenger.id}`, {
+            fetch(`https://api.roboartrumble.com/api/characters/${challenger.id}`, {
                 method: 'PUT',
                 headers: myHeaders,
                 body: formData
@@ -148,7 +148,7 @@ export default function Battle({ loggedIn, flashMessage }) {
                 champion: false
             })
 
-            fetch(`http://3.23.92.242/api/characters/${champ.id}`, {
+            fetch(`https://api.roboartrumble.com/api/characters/${champ.id}`, {
                 method: 'PUT',
                 headers: myHeaders,
                 body: formData2
