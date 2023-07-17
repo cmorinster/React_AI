@@ -6,13 +6,17 @@ export default function Navbar({ loggedIn, logUserOut }) {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
-                <Link className="navbar-brand" to="/">AI Art: King of the Hill</Link>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
+                <Link className="navbar-brand" to="/">RoboArt Rumble</Link>
+                <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon">
+                </span>
                 </button>
+                
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div className="navbar-nav">
+                    <div className="navbar-nav mr-auto">
+    
                         <Link className="nav-link" to="/">Home</Link>
+                    
                         {loggedIn ? (
                             <>
                             <Link className="nav-link" to="/create">Create A Character</Link>

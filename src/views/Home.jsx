@@ -45,7 +45,7 @@ export default function Home() {
     
       <div>
         
-      <h1>AI Art King of the Hill</h1>
+      <h1>RoboArt Rumble</h1>
       {loader?
         <>
         <h2 className='LoadingText'>Current Champ is Being Summoned!</h2>

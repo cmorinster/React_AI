@@ -56,7 +56,7 @@ export default function Battle({ loggedIn, flashMessage }) {
                 setstory(data);
             })
 
-    }, [champ])
+    }, [])
 
     
         // const { data:story, error, isLoading, isValidating } = useSWR('/api/user',  () => fetch(`http://127.0.0.1:5000/api/battle/${champ.id}/${challenger.id}`) 
