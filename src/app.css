@@ -36,7 +36,7 @@ h5 {
     position: relative;
     margin-top: 20px;
     border-radius: 50%;
-    left: 40%;
+    left: 38.5%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -437,10 +437,10 @@ h1{
             margin-bottom: 2%;
         }
         .battleButton{
-            left: 35%;
-            height: 150px;
-            width: 150px;
-            font-size:30px;
+            left: 32%;
+            height: 175px;
+            width: 175px;
+            font-size:35px;
         }
     }
 
@@ -450,14 +450,22 @@ h1{
         
             top: 15%;
             left: 3%;
-            font-size: 40px;
+            font-size: 30px;
         }
 
         .winner{
             top: 15%;
             left: 3%;
-            font-size: 40px;
+            font-size: 30px;
         
+        }
+
+
+        .battleButton{
+            left: 32%;
+            height: 150px;
+            width: 150px;
+            font-size:30px;
         }
 
     }

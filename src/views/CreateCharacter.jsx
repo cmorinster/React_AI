@@ -97,8 +97,8 @@ export default function CreateCharacter({ loggedIn, flashMessage }) {
                 <h5 className='MenuText'>Name</h5>
                 <input type="text" name="name" className="form-control InputText" placeholder="Enter Character's Name" />
                 <h5 className='MenuText'>Creature Type</h5>
-                <input className="form-control InputText" name="creature" />
-                {/* <select className="form-select InputText" name = "creature">
+                {/* <input className="form-control InputText" name="creature" /> */}
+                <select className="form-select InputText" name = "creature">
                     <option value="Aardvark">Aardvark</option>
                     <option value="Beaver">Beaver</option>
                     <option value="Cat">Cat</option>
@@ -110,12 +110,15 @@ export default function CreateCharacter({ loggedIn, flashMessage }) {
                     <option value="Elephant">Elephant</option>
                     <option value="Goat">Goat</option>
                     <option value="Gorilla">Gorilla</option>
+                    <option value="Hippo">Hippo</option>
+                    <option value="Horse">Horse</option>
                     <option value="Lion">Lion</option>
                     <option value="Manta Ray">Manta Ray</option>
                     <option value="Mummy">Mummy</option>
                     <option value="Narwhal">Narwhal</option>
                     <option value="Orc">Orc</option>
                     <option value="Otter">Otter</option>
+                    <option value="Parrot">Parrot</option>
                     <option value="Pig">Pig</option>
                     <option value="Raccoon">Raccoon</option>
                     <option value="Robot">Robot</option>
@@ -126,24 +129,29 @@ export default function CreateCharacter({ loggedIn, flashMessage }) {
                     <option value="Yak">Yak</option>
                     <option value="Zombie">Zombie</option>
 
-                </select> */}
+                </select>
             </div>
             <div className="col-5">
                 <h5 className='MenuText'>Action</h5>
-                <input className="form-control InputText" name="action" />
-                {/* <select className="form-select InputText" name = "action">
+                {/* <input className="form-control InputText" name="action" /> */}
+                <select className="form-select InputText" name = "action">
                     <option value="Breathing Fire">Breathing Fire</option>
                     <option value="Carrying groceries">Carrying Groceries</option>
                     <option value="Catching Fireflys With a Net">Catching Fireflys With a Net</option>
+                    <option value="Conducting Buisness">Conducting Buisness</option>
                     <option value="Directing Traffic">Directing Traffic</option>
-                    <option value="Grappling its Twin">Grappling its Twin</option>
+                    <option value="Doing their Civic Duty">Doing their Civic Duty</option>
+                    <option value="Drinking a Massive Soda">Drinking a Massive Soda</option>
+                    <option value="Flying a spaceship">Flying a Spaceship</option>
+                    <option value="Galloping">Galloping</option>
                     <option value="Holding an Axe">Holding an Axe</option>
                     <option value="Holding Watermelons">Holding Watermelons</option>
                     <option value="In a Hot Air Balloon">In a Hot Air Balloon</option>
                     <option value="In a trenchcoat">In a Trenchcoat</option>
                     <option value="Juggling Apples">Juggling Apples</option>
                     <option value="Lifting Weights">Lifting Weights</option>
-                    <option value="On the set of 8 Mile">On the set of 8 Mile</option>
+                    <option value="On the set of a Western Movie">On the Set of a Western Movie</option>
+                    <option value="Playing Guitar">Playing Guitar</option>
                     <option value="Pushing a Wheelbarrow">Pushing a Wheelbarrow</option>
                     <option value="Riding a Horse">Riding a Horse</option>
                     <option value="Skateboarding">Skateboarding</option>
@@ -152,22 +160,25 @@ export default function CreateCharacter({ loggedIn, flashMessage }) {
                     <option value="Wielding a Broad Sword">Wielding a Broad Sword</option>
                     <option value="With Horns">With Horns</option>
                     <option value="With a Jetpack">With a Jetpack</option>
-                </select> */}
+                </select>
             </div>
             <div className="col-5">
              <h5 className='MenuText'>Art Style</h5>
                 <select className="form-select InputText" name = "art">
                     <option value="1940s style Comic Book">1940s style Comic Book</option>
-                    <option value="1990s style Cartoon">1990s style Cartoon</option>
-                    <option value="Art Nouveau">Art Nouveau</option>
+                    <option value="1990s style Action Cartoon">1990s style Action Cartoon</option>
+                    <option value="Ancient Greek Art">Ancient Greek Art</option>
                     <option value="Anime Portrait">Anime Portrait</option>
+                    <option value="Art Nouveau">Art Nouveau</option> 
                     <option value="Cave painting">Cave painting</option>
                     <option value="Children's drawing">Children's drawing</option>
                     <option value="Cyberpunk">Cypberpunk</option>
                     <option value="Diagrammatic Drawing">Diagrammatic Drawing</option>
+                    <option value="Fantasy Art">Fantasy Art</option>
+                    <option value="Gothic">Gothic</option>
                     <option value="Graffiti">Graffiti</option>
                     <option value="Impressionist Painting">Impressionist Painting</option>
-                    <option value="Normal Rockwell">Norman Rockwell</option>
+                    <option value="Lisa Frank">Lisa Frank</option>
                     <option value="On a Wanted Poster">On a Wanted Poster</option>
                     <option value="Oil Painting">Oil Painting</option>
                     <option value="Picasso">Picasso</option>
@@ -176,7 +187,9 @@ export default function CreateCharacter({ loggedIn, flashMessage }) {
                     <option value="Photograph">Photograph</option>
                     <option value="Photorealism">Photorealism</option>
                     <option value="Renaissance Painting">Renaissance Painting</option>
+                    <option value="Sci-Fi Art">Sci-Fi Art</option> 
                     <option value="Surrealism">Surrealism</option> 
+                    <option value="Steam Punk">Steam Punk</option> 
                     <option value="Ukiyo-e art">Ukiyo-e art</option>
                     <option value="Van Gogh">Van Gogh</option>
                     <option value="Watercolour">Watercolour</option>
