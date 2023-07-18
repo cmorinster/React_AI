@@ -25,38 +25,64 @@ export default function Battle({ loggedIn, flashMessage }) {
         }
     })
 
-    useEffect(() => {
-        setLoader(true);
-        fetch(`https://api.roboartrumble.com/api/champ`)
-        .then(res => res.json())
-        .then(data => {
-            console.log(data);
-            setChamp(data);
-            setLoader(false);
+    // useEffect(() => {
+    //     (async function(){
+    //     setLoader(true);
+    //     await fetch(`https://api.roboartrumble.com/api/champ`)
+    //     .then(res => res.json())
+    //     .then(data => {
+    //         console.log(data);
+    //         setChamp(data);
+    //         setLoader(false);
             
-        }) 
+    //     }) 
 
 
-        fetch(`https://api.roboartrumble.com/api/characters/${characterCurrent}`)
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
-                setChallenger(data);
+    //     await fetch(`https://api.roboartrumble.com/api/characters/${characterCurrent}`)
+    //         .then(res => res.json())
+    //         .then(data => {
+    //             console.log(data);
+    //             setChallenger(data);
                 
 
-            })
+    //         })
         
+
+
+    //         fetch(`https://api.roboartrumble.com/api/battle/${champ.id}/${challenger.id}`)
+    //         .then(res => res.json())
+    //         .then(data => {
+    //             setstory(data);
+    //         })
+
+
+    //     })();
+    // }, [characterCurrent])
+    useEffect(() => {
+        (async function(){
+        setLoader(true);
+        const champData  = await fetch(`https://api.roboartrumble.com/api/champ`)
+        .then(res => res.json());
+        const challengerData = await fetch(`https://api.roboartrumble.com/api/characters/${characterCurrent}`)
+        .then(res => res.json());
+        const storyData = fetch(`https://api.roboartrumble.com/api/battle/${champData['id']}/${challengerData['id']}`)
+        .then(res => res.json());
+        console.log(champData['id']);
+        setChamp(champData);
+        setChallenger(challengerData);
+        setstory(storyData);
+        setLoader(false);
+            
+        }) ();
+
+
+       
     }, [characterCurrent])
-    
 
-    useEffect(()=>{
-        fetch(`https://api.roboartrumble.com/api/battle/${champ.id}/${challenger.id}`)
-            .then(res => res.json())
-            .then(data => {
-                setstory(data);
-            })
+    // useEffect(()=>{
+        
 
-    }, [])
+    // }, [])
 
     
         // const { data:story, error, isLoading, isValidating } = useSWR('/api/user',  () => fetch(`http://127.0.0.1:5000/api/battle/${champ.id}/${challenger.id}`) 
