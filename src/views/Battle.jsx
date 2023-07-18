@@ -65,6 +65,8 @@ export default function Battle({ loggedIn, flashMessage }) {
         .then(res => res.json());
         const challengerData = await fetch(`https://api.roboartrumble.com/api/characters/${characterCurrent}`)
         .then(res => res.json());
+        console.log('hi')
+        console.log(champData['id'])
         const storyData = fetch(`https://api.roboartrumble.com/api/battle/${champData['id']}/${challengerData['id']}`)
         .then(res => res.json());
         console.log(champData['id']);
@@ -74,7 +76,12 @@ export default function Battle({ loggedIn, flashMessage }) {
         setLoader(false);
             
         }) ();
-
+        console.log('bye')
+        fetch(`https://api.roboartrumble.com/api/battle/${champ['id']}/${challenger['id']}`)
+        .then(res => res.json())
+        .then(data => {
+            setstory(data);
+                    });
 
        
     }, [characterCurrent])
