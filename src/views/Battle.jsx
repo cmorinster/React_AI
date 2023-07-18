@@ -15,6 +15,7 @@ export default function Battle({ loggedIn, flashMessage }) {
     const [challHealth, setchallHealth] = useState(30);
     const [buttonChecker, setbuttonChecker] = useState(true);
     const [winner, setWinner] = useState(null);
+    const loadCheck = useRef(false);
     let characterCurrent = localStorage.getItem('charId');
     const navigate = useNavigate();
 
@@ -64,22 +65,31 @@ export default function Battle({ loggedIn, flashMessage }) {
         const champData  = await fetch(`https://api.roboartrumble.com/api/champ`)
         .then(res => res.json());
         const challengerData = await fetch(`https://api.roboartrumble.com/api/characters/${characterCurrent}`)
-        .then(res => res.json());
-        const storyData = fetch(`https://api.roboartrumble.com/api/battle/${champData['id']}/${challengerData['id']}`)
-        .then(res => res.json());
-        console.log(champData['id']);
+        .then(res => res.json())
+        loadCheck.current = true;
         setChamp(champData);
         setChallenger(challengerData);
-        setstory(storyData);
         setLoader(false);
+
             
-        }) ();    
+        }
+        
+        ) ();    
     }, [characterCurrent])
 
-    // useEffect(()=>{
-        
 
-    // }, [])
+
+
+    useEffect(()=>{
+        if (loadCheck) {
+        fetch(`https://api.roboartrumble.com/api/battle/${champ['id']}/${challenger['id']}`)
+        .then(res => res.json())
+        .then(data => {
+         setstory(data);
+        })
+        }
+
+    }, [champ['id'], challenger['id']])
 
     
         // const { data:story, error, isLoading, isValidating } = useSWR('/api/user',  () => fetch(`http://127.0.0.1:5000/api/battle/${champ.id}/${challenger.id}`) 
