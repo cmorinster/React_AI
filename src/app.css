@@ -436,9 +436,15 @@ h1{
             font-size: 20px;
             margin-bottom: 2%;
         }
+        .battleButton{
+            left: 35%;
+            height: 150px;
+            width: 150px;
+            font-size:30px;
+        }
     }
 
-    @media only screen and (min-width: 600px){
+    @media only screen and (max-width: 600px){
 
         .damage_lose{
         
@@ -454,9 +460,4 @@ h1{
         
         }
 
-        .battleButton{
-            left: 20%;
-            height: 100px;
-            width: 100px;
-        }
     }
