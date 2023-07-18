@@ -81,13 +81,13 @@ export default function Battle({ loggedIn, flashMessage }) {
 
 
     useEffect(()=>{
-        if (loadCheck) {
+        
         fetch(`https://api.roboartrumble.com/api/battle/${champ['id']}/${challenger['id']}`)
         .then(res => res.json())
         .then(data => {
          setstory(data);
         })
-        }
+        
 
     }, [champ['id'], challenger['id']])
 
