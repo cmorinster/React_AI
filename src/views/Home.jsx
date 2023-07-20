@@ -72,6 +72,7 @@ export default function Home() {
           <div className='HomeButtons'>
             <Link className='btn btn-primary left homeButton' to={`/register`}>Register</Link>
             <Link className='btn btn-primary right homeButton' to={`/login`}>Login</Link>
+            <Link className='btn btn-primary right homeButton' to={`/about`}>About</Link>
             <Link className='btn btn-primary right homeButton' to={`/hof`}>Hall of Fame</Link>
           </div>
         </div>
