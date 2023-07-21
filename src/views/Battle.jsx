@@ -219,7 +219,8 @@ export default function Battle({ loggedIn, flashMessage }) {
         <form action="" onSubmit={handleSubmit}>
         <div className="row">
             <div className="col-6">
-                <div className="card mt-5">
+            <h5 className="text-center">Challenger</h5>
+                <div className="card">
                     <img className="overlayImg" alt= "challenger" src={challenger.link}></img>
                     {((winner!= 'challenger' && winner!= 'champion')&&(challDamage!=40)) && 
                         <p className='damage'>- {challDamage}</p>
@@ -245,7 +246,8 @@ export default function Battle({ loggedIn, flashMessage }) {
                 
                 </div>
             <div className="col-6">
-            <div className="card mt-5">
+                <h5 className="text-center text-nowrap"></h5><h5 className="text-center text-nowrap">Champ &#40;Win Streak:{champ.wins}&#41;</h5>
+            <div className="card">
                     <img className="overlayImg" alt="champion" src={champ.link}></img>
                     {((winner!= 'challenger' && winner!= 'champion')&&(champDamage!=40)) && 
                         <p className='damage'>- {champDamage}</p>
@@ -257,6 +259,7 @@ export default function Battle({ loggedIn, flashMessage }) {
                         <p className='damage_lose'>Defeated</p>
                         }
                     <div className="card-body">
+
                         <h5 className="card-title">{champ.name}</h5>
                         <p className='card-text stats'>Strength: {champ.strength}</p>
                         <p className='card-text stats'>Speed: {champ.speed}</p>
@@ -265,6 +268,7 @@ export default function Battle({ loggedIn, flashMessage }) {
                         <p className='card-text stats'>Camoflague: {champ.camoflague}</p>
                         <p className='card-text stats'>Intellegence: {champ.intellegence}</p>
                         <p className={buttonChecker == false ? "card-text stats hitpoints": 'card-text stats'}>Health: {buttonChecker ? champ.health:champHealth}</p>     
+                
                     </div>     
                 </div>
                        

@@ -10,26 +10,27 @@ h2{
 
 h4{ 
 
-    font-family:'Warrior of World', 'Luminari';
+    font-family: 'Germania One', cursive;
     color: rgb(249, 251, 228);
     text-align: center;
 }
 
 h3{
     color:crimson;
-    font-family:'Papyrus';
+    font-family: 'Alkatra', cursive;
 }
 
 h2{
  
-    font-family:'Warrior of World', 'Luminari';
+    font-family: 'Germania One', cursive;
     margin-top: 10px;
+    font-size: 40px;
 }
 
 h5 {
     margin-top: 10px;
-
-    font-family:'Warrior of World', 'Luminari';
+    font-size:25px;
+    font-family: 'Germania One', cursive;
 }
 
 .battleButton {
@@ -49,7 +50,7 @@ h5 {
 
 .homeButton{
     padding: 5%;
-    font-size: 20px;
+    font-size: 22px;
     width: 80%;
     margin-left: 10%;
     margin-bottom: 20%;
@@ -57,7 +58,7 @@ h5 {
     color: black;
     background-color: #67b9b8;
     display:block;
-    font-family:'Warrior of World', 'Luminari';
+    font-family: 'Germania One', cursive;
 }
 .homeButton:hover{
     border-color: rgb(249, 251, 228);
@@ -66,10 +67,10 @@ h5 {
 
 }
 h1{
-    font-family:'Warrior of World', 'Luminari';
+    font-family: 'Germania One', cursive;
     text-align: center;
     margin-top: 2%;
-    font-size: 50px;
+    font-size: 60px;
     margin-bottom: 2%;
 }
 
@@ -135,6 +136,18 @@ h1{
     padding-top: 1%;
 }
 
+.hofCard{
+    position: relative;
+    width: 40%;
+    height: 85%;
+    left: 9.5%;
+    text-align: center;
+    border-radius: 15%;
+    background-color: rgb(249, 251, 228);
+    padding-top: 1%;
+}
+
+
 .frameHof{
     padding-top: 5%;
 }
@@ -169,14 +182,14 @@ h1{
     padding: 4.5% 15px;
     width: 50%;
     text-align: center;
-    font-family:'Papyrus';
+    font-family: 'Alkatra', cursive;
 
 }
 .hofList>tr>th{
     padding: 3px 2px;
     width: 50%;
     text-align: center;
-    font-family:'Warrior of World', 'Luminari';
+    font-family: 'Germania One', cursive;
 }
 .hofList>tr>td:first-child{
     background-color:  #67b9b8;
@@ -246,7 +259,7 @@ h1{
     left: 25%;
     font-size: 220px;
     color: red;
-    font-family: 'Bloody Scary'
+    font-family: 'Creepster', cursive;
 }
 
 .winner{
@@ -254,9 +267,9 @@ h1{
     position: absolute;
     top: 25%;
     left: 5%;
-    font-size: 110px;
+    font-size: 130px;
     color:rgb(181, 252, 3);
-    font-family:'The Black Knight'
+    font-family: 'Germania One', cursive;
 }
 
 .damage_lose{
@@ -266,12 +279,12 @@ h1{
     left: 3%;
     font-size: 130px;
     color: red;
-    font-family: 'Bloody Scary'
+    font-family: 'Creepster', cursive;
 }
 
 .story2{
-    font-size: 60px;
-    font-family:'The Black Knight';
+    font-size: 70px;
+    font-family: 'Germania One', cursive;
     color: rgb(249, 251, 228);
     margin-left: auto;
 
@@ -293,17 +306,17 @@ h1{
 
 .LoadingText{
     text-align: center;
-    font-family:'Warrior of World', 'Luminari';
+    font-family: 'Germania One', cursive;
 }
 
 .ButtonApp{
-    font-family:'Warrior of World', 'Luminari';
-    font-size: 20px;
+    font-family: 'Germania One', cursive;
+    font-size: 25px;
 }
 
 .MenuText{
-    font-family:'Warrior of World', 'Luminari';
-    font-size: 25px;
+    font-family: 'Germania One', cursive;
+    font-size: 30px;
     margin-top: 3%;
     margin-bottom: 3%;
     color: rgb(249, 251, 228);
@@ -415,6 +428,10 @@ h1{
     
     }
     
+    .hofCard{
+        display: none;
+    }
+
     }
     /* end of small screen */
 

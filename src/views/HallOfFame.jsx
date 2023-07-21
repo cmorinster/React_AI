@@ -117,7 +117,7 @@ function changeHero(heroId) {
 }
       </div>
       <div className='row'>
-        <div className="homeCard">
+        <div className="hofCard">
             
  
                 <h3>Hero</h3>
