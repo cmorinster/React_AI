@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import useSWR from 'swr'
+
 import { useRef } from 'react';
 import PuffLoader from "react-spinners/PuffLoader";
 import { useNavigate } from 'react-router-dom';

@@ -189,7 +189,7 @@ export default function CreateCharacter({ loggedIn, flashMessage }) {
                     <option value="Renaissance Painting">Renaissance Painting</option>
                     <option value="Sci-Fi Art">Sci-Fi Art</option> 
                     <option value="Surrealism">Surrealism</option> 
-                    <option value="Steam Punk">Steam Punk</option> 
+                    <option value="Steam Punk">Steam</option> 
                     <option value="Ukiyo-e art">Ukiyo-e art</option>
                     <option value="Van Gogh">Van Gogh</option>
                     <option value="Watercolour">Watercolour</option>

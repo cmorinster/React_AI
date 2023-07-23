@@ -43,7 +43,7 @@ export default function Home() {
 
   return (
     
-      <div>
+      <div className='homeBody'>
         
       <h1>RoboArt Rumble</h1>
       {loader?
