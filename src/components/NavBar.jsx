@@ -29,7 +29,7 @@ export default function Navbar({ loggedIn, logUserOut }) {
                         {loggedIn ? (
                             <>
                             <Link className="nav-link" to="/create">Create A Character</Link>
-                            <img src={Dragon} alt="Logo" className ="dragonLogo" />
+        
                             <img src={Knight} alt="Logo" className ="knightLogo" />
                             <Link className="nav-link" to="/" onClick={() => logUserOut()}>Log Out</Link>
                             </>
