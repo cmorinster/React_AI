@@ -66,13 +66,13 @@ h5 {
 
 
 .knightLogo{
-    height:50 px;
-    width: 50px;
+    height:59.5 px;
+    width: 59.5px;
     background-color: rgb(177, 196, 204);
 }
 .lionLogo{
-    height:50 px;
-    width: 50px;
+    height:71 px;
+    width: 71px;
     background-color: rgb(177, 196, 204);
 }
 .dragonLogo{
@@ -80,6 +80,21 @@ h5 {
     width: 50px;
     background-color: rgb(177, 196, 204);
 
+}
+
+#loginText{
+
+    white-space: nowrap;
+}
+.doorLogo{
+    height:52 px;
+    width: 52px;
+    background-color: rgb(177, 196, 204);
+}
+.houseLogo{
+    height:50 px;
+    width: 50px;
+    background-color: rgb(177, 196, 204);
 }
 
 
@@ -387,6 +402,21 @@ h1{
 @media only screen and (max-width: 992px) {
 
     /*battle */
+
+    .aiIcons{
+        justify-content: left !important;
+        text-align: left !important;
+
+        
+    }
+ .aiIcons2{
+        justify-content: left !important;
+        display: block;
+
+        
+        
+    }
+
     
     .winner{
         top: 15%;

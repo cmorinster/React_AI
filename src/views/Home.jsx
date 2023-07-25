@@ -67,11 +67,11 @@ export default function Home() {
         
           <div className='frame'>
           
-              <img src={champion.link} className="homeImg"></img>
+              <img src={champion.link} alt="champImg" className="homeImg"></img>
           </div>
           <div className='HomeButtons'>
             <Link className='btn btn-primary left homeButton' to={`/register`}>Register</Link>
-            <Link className='btn btn-primary right homeButton' to={`/login`}>Login</Link>
+            <Link className='btn btn-primary right homeButton' to={`/login`}>Log In</Link>
             <Link className='btn btn-primary right homeButton' to={`/about`}>About</Link>
             <Link className='btn btn-primary right homeButton' to={`/hof`}>Hall of Fame</Link>
           </div>

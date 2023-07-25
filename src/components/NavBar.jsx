@@ -2,7 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Knight from '../Images/knighttransparent.png'
 import Lion from '../Images/Lion.png'
-import Dragon from '../Images/Dragon.png'
+// import Dragon from '../Images/Dragon.png'
+import Door from '../Images/DogDoor.png'
+import House from '../Images/House.png'
 
 export default function Navbar({ loggedIn, logUserOut }) {
 
@@ -19,36 +21,46 @@ export default function Navbar({ loggedIn, logUserOut }) {
                 </button>
                 
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div className="navbar-nav mr-auto justify-content-end">
-                    <Link to="/">
-                    <img src={Dragon} alt="Logo" className ="dragonLogo" />
-                    </Link>  
+                    <div className="navbar-nav">
+
+                        <div className="col justify-content-center text-center aiIcons">
+                        <Link to="/">
+                        <img src={House} alt="Logo" className ="houseLogo" />
+                        </Link>  
                         <Link className="nav-link" to="/">Home</Link>
-                        
-                        
+                        </div>
+                            
                         
                     
                         {loggedIn ? (
                             <>
-                            <Link to="/create">
-                            <img src={Lion} alt="Logo" className ="lionLogo" />
-                            </Link>
-                            <Link className="nav-link" to="/create">Create A Character</Link>
-                            <Link to="/" onClick={() => logUserOut()}>
-                            <img src={Knight} alt="Logo" className ="knightLogo" />
-                            </Link>
-                            <Link className="nav-link" to="/" onClick={() => logUserOut()}>Log Out</Link>
+                                <div className="col justify-content-center text-center aiIcons">
+                                <Link to="/create">
+                                <img src={Lion} alt="Logo" className ="lionLogo" />
+                                </Link>
+                                <Link className="nav-link" to="/create">Create a Character</Link>
+                                </div>
+                                <div className="col justify-content-center text-center aiIcons">
+                                <Link to="/" onClick={() => logUserOut()}>
+                                <img src={Door} alt="Logo" className ="doorLogo" />
+                                </Link>
+                                <Link className="nav-link" to="/" onClick={() => logUserOut()}>Log Out</Link>
+                                </div>
                             </>
                         ) : (
                             <>
+                            <div className="col justify-content-center text-center aiIcons">
                             <Link to="/register">
-                            <img src={Lion} alt="Logo" className ="lionLogo" />
-                            </Link>
-                            <Link className="nav-link" to="/register">Register</Link>
-                            <Link to="/login">
                             <img src={Knight} alt="Logo" className ="knightLogo" />
                             </Link>
+                            <Link className="nav-link" to="/register">Register</Link>
+                            </div>
+                            <div className="col justify-content-center text-center aiIcons" id="loginText">
+                            <Link to="/login">
+                            <img src={Door} alt="Logo" className ="doorLogo" />
+                            </Link>
                             <Link className="nav-link" to="/login">Log In</Link>
+                            </div>
                             </>
                         )}
                     </div>
