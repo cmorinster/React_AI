@@ -45,7 +45,7 @@ export default function Home() {
     
       <div className='homeBody'>
         
-      <h1>RoboArt Rumble</h1>
+      
       {loader?
         <>
         <h2 className='LoadingText'>Current Champ is Being Summoned!</h2>
@@ -62,7 +62,7 @@ export default function Home() {
 
       :
       <>
-      
+      <h1 id='titleText'>All hail the current champ, {champion.name}!</h1>
         <div className='row'>
         
           <div className='frame'>

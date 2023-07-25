@@ -13,7 +13,7 @@ export default function Navbar({ loggedIn, logUserOut }) {
             
             <div className="container-fluid navSettings">
                 
-                <Link className="navbar-brand" to="/">RoboArt Rumble</Link>
+                <Link className="navbar-brand nameFont" to="/">RoboArt <br></br>Rumble</Link>
                 
                 <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon">
