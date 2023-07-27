@@ -100,6 +100,7 @@ export default function CreateCharacter({ loggedIn, flashMessage }) {
                 {/* <input className="form-control InputText" name="creature" /> */}
                 <select className="form-select InputText" name = "creature">
                     <option value="Aardvark">Aardvark</option>
+                    <option value="Bear">Bear</option>
                     <option value="Beaver">Beaver</option>
                     <option value="Cat">Cat</option>
                     <option value="Cucumber">Cucumber</option>
@@ -112,6 +113,7 @@ export default function CreateCharacter({ loggedIn, flashMessage }) {
                     <option value="Gorilla">Gorilla</option>
                     <option value="Hippo">Hippo</option>
                     <option value="Horse">Horse</option>
+                    <option value="Kangeroo">Kangeroo</option>
                     <option value="Lion">Lion</option>
                     <option value="Manta Ray">Manta Ray</option>
                     <option value="Mummy">Mummy</option>
@@ -165,7 +167,6 @@ export default function CreateCharacter({ loggedIn, flashMessage }) {
             <div className="col-5">
              <h5 className='MenuText'>Art Style</h5>
                 <select className="form-select InputText" name = "art">
-                    <option value="1940s style Comic Book">1940s style Comic Book</option>
                     <option value="1990s style Action Cartoon">1990s style Action Cartoon</option>
                     <option value="Ancient Greek Art">Ancient Greek Art</option>
                     <option value="Anime Portrait">Anime Portrait</option>
@@ -175,7 +176,7 @@ export default function CreateCharacter({ loggedIn, flashMessage }) {
                     <option value="Cyberpunk">Cypberpunk</option>
                     <option value="Diagrammatic Drawing">Diagrammatic Drawing</option>
                     <option value="Fantasy Art">Fantasy Art</option>
-                    <option value="Gothic">Gothic</option>
+                    <option value="Gothic Horror Art">Gothic Horror Art</option>
                     <option value="Graffiti">Graffiti</option>
                     <option value="Impressionist Painting">Impressionist Painting</option>
                     <option value="Lisa Frank">Lisa Frank</option>
@@ -189,7 +190,8 @@ export default function CreateCharacter({ loggedIn, flashMessage }) {
                     <option value="Renaissance Painting">Renaissance Painting</option>
                     <option value="Sci-Fi Art">Sci-Fi Art</option> 
                     <option value="Surrealism">Surrealism</option> 
-                    <option value="Steam Punk">Steam</option> 
+                    <option value="Steam Punk">Steam Punk</option> 
+                    <option value="Turn of the Century Photograph">Turn of the Century Photograph</option>
                     <option value="Ukiyo-e art">Ukiyo-e art</option>
                     <option value="Van Gogh">Van Gogh</option>
                     <option value="Watercolour">Watercolour</option>
