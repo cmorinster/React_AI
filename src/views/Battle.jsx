@@ -203,7 +203,6 @@ export default function Battle({ loggedIn, flashMessage }) {
         {loader?
         <>
         <h2 className='LoadingText BattleLoading'>Arena is being setup!</h2>
-        <p className='LoadingTextSmall'>Please be patient, small robots are hand drawing the characters</p>
         
         <PuffLoader
         className='loader'
