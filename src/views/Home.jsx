@@ -49,6 +49,7 @@ export default function Home() {
       {loader?
         <>
         <h2 className='LoadingText'>Current Champ is Being Summoned!</h2>
+        <p className='LoadingTextSmall'>Please be patient, small robots are hand drawing the champion</p>
         
         <PuffLoader
         className='loader'
